@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="220" viewBox="0 0 900 220">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="0.55" stop-color="#161b3a"/>
+      <stop offset="1" stop-color="#2a1352"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#bc8cff"/>
+    </linearGradient>
+    <pattern id="grid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M30 0H0V30" fill="none" stroke="#ffffff" stroke-opacity="0.04"/>
+    </pattern>
+  </defs>
+  <rect width="900" height="220" rx="16" fill="url(#bg)"/>
+  <rect width="900" height="220" rx="16" fill="url(#grid)"/>
+  <circle cx="780" cy="40" r="90" fill="#bc8cff" opacity="0.10">
+    <animate attributeName="r" values="90;110;90" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="120" cy="190" r="70" fill="#58a6ff" opacity="0.10">
+    <animate attributeName="r" values="70;90;70" dur="7s" repeatCount="indefinite"/>
+  </circle>
+  <g font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace">
+    <text x="60" y="72" font-size="18" fill="#8b949e">$ whoami</text>
+    <text x="60" y="130" font-size="56" font-weight="700" fill="url(#accent)">devdavede</text>
+    <text x="60" y="170" font-size="18" fill="#c9d1d9">cp --reserve und der Tag wird gut.</text>
+    <rect x="62" y="182" width="10" height="3" fill="#58a6ff">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
